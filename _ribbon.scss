@@ -1,0 +1,361 @@
+@mixin bg-gradient($start-colour, $end-colour) {
+        background-color: $start-colour;
+        /*background-image: -webkit-gradient(linear, left top, left bottom, from($start-colour), to($end-colour));
+        background-image: -webkit-linear-gradient(top, $start-colour, $end-colour);
+        background-image:    -moz-linear-gradient(top, $start-colour, $end-colour);
+        background-image:     -ms-linear-gradient(top, $start-colour, $end-colour);
+        background-image:      -o-linear-gradient(top, $start-colour, $end-colour);
+        background-image:         linear-gradient(top, $start-colour, $end-colour);
+        filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#{$start-colour}', end-colourStr='#{$end-colour}');*/
+    }
+@mixin bg-color($colour) {
+        background-color: $colour;
+    }
+@mixin standard-bg($standard-colour) {
+        background-color: $standard-colour;
+    }
+@mixin border-colour($border-colour) {
+        border-color: $border-colour transparent transparent transparent;
+    }
+
+.ribbon {
+	position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+    overflow: hidden;
+    width: 190px;
+    height: 60px;
+    text-align: left;
+		span {
+			@include standard-bg($base-blue);
+			font-size: 115%;
+			color: #fff;
+			text-transform: uppercase;
+			text-align: center;
+			font-weight: normal;
+			line-height: 25px;
+			-moz-transform: rotate(-20deg);
+			-webkit-transform: rotate(-20deg);
+			-o-transform: rotate(-20deg);
+			-ms-transform: rotate(-20deg);
+			transform: rotate(-20deg);
+			width: 100%;
+			display: block;
+			position: absolute;
+			top: 9px;
+			right: 48px;
+			font-family: $base-font;
+		
+			&:before {
+			position: absolute;
+			left: 0px;
+			top: 100%;
+			z-index: -1;
+			border-right: 3px solid transparent;
+			border-bottom: 3px solid transparent;
+			}
+			
+			&:after {
+			position: absolute;
+			right: 0%;
+			top: 100%;
+			z-index: -1;
+			border-left: 3px solid transparent;
+			border-bottom: 3px solid transparent;
+			}
+		}
+}
+
+.bastitest span,
+.storsaljare span{
+@include bg-color(#febc03);
+$experimental-support-for-svg: true;
+
+	&:before {
+		border-left: 3px solid #d69704;
+		border-top: 3px solid #d69704;
+	}
+	&:after {
+		border-right: 3px solid #d69704;
+		border-top: 3px solid #d69704;
+	}
+}
+
+.driftsakrast span,
+.rekommenderas span,
+.starksmart span {
+@include bg-color(#79896d);
+$experimental-support-for-svg: true;
+
+	&:before {
+		border-left: 3px solid #535e4b;
+		border-top: 3px solid #535e4b;
+	}
+	&:after {
+		border-right: 3px solid #535e4b;
+		border-top: 3px solid #535e4b;
+	}
+}
+
+.dubbel span,
+.fyrling span,
+.trippel span {
+@include bg-color(#7f85c6);
+$experimental-support-for-svg: true;
+
+	&:before {
+		border-left: 3px solid #606793;
+		border-top: 3px solid #606793;
+	}
+	&:after {
+		border-right: 3px solid #606793;
+		border-top: 3px solid #606793;
+	}
+}
+
+.golvmodell span,
+.snyggast span,
+.liteninnedel span {
+@include bg-color(#8397a0);
+$experimental-support-for-svg: true;
+
+	&:before {
+		border-left: 3px solid #4c707f;
+		border-top: 3px solid #4c707f;
+	}
+	&:after {
+		border-right: 3px solid #4c707f;
+		border-top: 3px solid #4c707f;
+	}
+}
+
+.hogtcop span,
+.hogbesparing span {
+@include bg-color(#fa6632);
+$experimental-support-for-svg: true;
+
+	&:before {
+		border-left: 3px solid #c63905;
+		border-top: 3px solid #c63905;
+	}
+	&:after {
+		border-right: 3px solid #c63905;
+		border-top: 3px solid #c63905;
+	}
+}
+
+.inklrotavdrag span {
+@include bg-color(#9d5e46);
+$experimental-support-for-svg: true;
+
+	&:before {
+		border-left: 3px solid #68402f;
+		border-top: 3px solid #68402f;
+	}
+	&:after {
+		border-right: 3px solid #68402f;
+		border-top: 3px solid #68402f;
+	}
+}
+
+.lagstpris span,
+.utforsaljning span,
+.kampanj span {
+@include bg-color(#c60000);
+$experimental-support-for-svg: true;
+
+	&:before {
+		border-left: 3px solid #990000;
+		border-top: 3px solid #990000;
+	}
+	&:after {
+		border-right: 3px solid #990000;
+		border-top: 3px solid #990000;
+	}
+}
+
+.nyhet span {
+@include bg-color(#2066c2);
+$experimental-support-for-svg: true;
+
+	&:before {
+		border-left: 3px solid #002f6e;
+		border-top: 3px solid #002f6e;
+	}
+	&:after {
+		border-right: 3px solid #002f6e;
+		border-top: 3px solid #002f6e;
+	}
+}
+
+.synligaskador span {
+@include bg-color(#FF0000);
+$experimental-support-for-svg: true;
+
+	&:before {
+		border-left: 3px solid #BA0000;
+		border-top: 3px solid #BA0000;
+	}
+	&:after {
+		border-right: 3px solid #BA0000;
+		border-top: 3px solid #BA0000;
+	}
+}
+
+.ingasynligaskador span {
+@include bg-color(#008000);
+$experimental-support-for-svg: true;
+
+	&:before {
+		border-left: 3px solid #006300;
+		border-top: 3px solid #006300;
+	}
+	&:after {
+		border-right: 3px solid #006300;
+		border-top: 3px solid #006300;
+	}
+}
+
+div[class*='upptill'] span {
+@include bg-color(#4F2D7F);
+$experimental-support-for-svg: true;
+
+	&:before {
+		border-left: 3px solid #381F5C;
+		border-top: 3px solid #381F5C;
+	}
+	&:after {
+		border-right: 3px solid #381F5C;
+		border-top: 3px solid #381F5C;
+	}
+}
+
+.motor span {
+@include bg-color(#afcb73);
+$experimental-support-for-svg: true;
+
+	&:before {
+		border-left: 3px solid #afcb73;
+		border-top: 3px solid #afcb73;
+	}
+	&:after {
+		border-right: 3px solid #afcb73;
+		border-top: 3px solid #afcb73;
+	}
+}
+
+
+/* Horizontal ribbons
+-------------------------------------------------------------- */
+/*.wrap-ribbon {
+    display: block;
+    width: 100%;
+    margin: 0;
+    margin-top: -9%;
+    padding: 5px 10px;
+    position: relative;
+    left: -7%;
+    top: 0%;
+    color: #fff;
+    text-shadow: 0 1px 1px #000;
+    background: #4F2D7F;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    z-index: 1;
+    border-radius: 2px 2px 0 0;
+    font-family: $base-font;
+    font-weight: 700;
+    text-align: center;	
+		span {
+			font-size: 140%;
+			margin: 0;
+			line-height: 90%;
+			padding-bottom: 1%;
+		}
+		&:before{
+			border-top: 5px solid;
+			border-bottom: 5px solid;
+			border-left: 5px solid;
+			border-right: 0px solid;
+			left: 0;
+		}
+		&:after {
+			border-top: 5px solid;
+			border-bottom: 5px solid;
+			border-left: 0px solid;
+			border-right: 5px solid;
+			right: 0;
+		}
+}
+*/
+/*.wrap-ribbon:before,
+.wrap-ribbon:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -9px;
+    z-index: -1;
+    @include border-colour(#1b57a6);   
+}*/
+
+.wrap-ribbon {
+    margin: 0;
+    padding: 3px 10px;
+    position: absolute;
+    right: 4%;
+    top: 22%;
+    color: #fff;
+    /*text-shadow: 0 1px 1px #000;*/
+    background: $base-blue;
+    /*box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);*/
+    z-index: 1;
+    font-family: $base-font;
+    font-weight: 700;
+    text-align: right;
+    font-size: 1.2em;
+		
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: -10px;
+			width: 0;
+			height: 0;
+			border-top: 12px solid $base-blue;
+			border-left: 10px solid transparent;
+		}
+		
+		&:after {
+			content: '';
+			position: absolute;
+			top: 12px;
+			left: -10px;
+			width: 0;
+			height: 0;
+			border-bottom: 12px solid $base-blue;
+			border-left: 10px solid transparent;
+		}
+}
+
+.julklapppakopet {
+	@include bg-color(#CB1818);
+	&:before{
+		border-top: 12px solid #CB1818;
+	}
+	&:after {
+		border-bottom: 12px solid #CB1818;
+	}
+}
+
+.rabattmedvillaagarna {
+	@include bg-color(#4F2D7F);
+	&:before{
+		border-top: 12px solid #4F2D7F;
+	}
+	&:after {
+		border-bottom: 12px solid #4F2D7F;
+	}
+}
+
