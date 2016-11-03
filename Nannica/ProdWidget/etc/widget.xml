@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<widgets>
+  <prodwidget_attribute type="prodwidget/attribute" translate="name description" module="prodwidget">
+    <name>Product Attribute</name>
+    <description>Get product attributes and display in static block</description>
+    <parameters>
+      <attribute_options>
+        <label>Attribute with pre-defined HTML</label>
+        <visible>1</visible>
+        <required>0</required>
+        <type>select</type>
+        <source_model>prodwidget/options</source_model>
+      </attribute_options>
+	   <attribute_code>
+        <label>Attribute Code (ex. kvt_levtid)</label>
+        <visible>1</visible>
+        <required>0</required>
+        <type>text</type>
+      </attribute_code>
+	   <attribute_label>
+        <label>Show attribute label</label>
+        <visible>1</visible>
+        <required>0</required>
+        <type>select</type>
+		<source_model>adminhtml/system_config_source_yesno</source_model>
+      </attribute_label>
+    </parameters>
+  </prodwidget_attribute>
+</widgets>

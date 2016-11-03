@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Nannica_CustomCategoryCode>
+            <version>0.0.2</version>
+        </Nannica_CustomCategoryCode>
+    </modules>
+ 
+    <global>
+        <resources>
+            <add_category_code>
+                <setup>
+                    <module>Nannica_CustomCategoryCode</module>
+                    <class>Mage_Catalog_Model_Resource_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </add_category_code>
+            <add_category_code_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </add_category_code_write>
+            <add_category_code_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </add_category_code_read>
+        </resources>
+    </global>
+</config>

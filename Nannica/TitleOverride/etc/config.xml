@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Nannica_TitleOverride>
+            <version>0.0.1</version>
+        </Nannica_TitleOverride>
+    </modules>
+ 
+    <global>
+        <resources>
+            <add_custom_title>
+                <setup>
+                    <module>Nannica_TitleOverride</module>
+                    <class>Mage_Catalog_Model_Resource_Eav_Mysql4_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </add_custom_title>
+            <add_custom_title_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </add_custom_title_write>
+            <add_custom_title_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </add_custom_title_read>
+        </resources>
+    </global>
+</config>

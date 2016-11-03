@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Nannica_ProdWidget>
+      <version>0.0.1</version>
+    </Nannica_ProdWidget>
+  </modules>
+  <global>
+    <helpers>
+      <prodwidget>
+        <class>Nannica_ProdWidget_Helper</class>
+      </prodwidget>
+    </helpers>
+    <blocks>
+      <prodwidget>
+        <class>Nannica_ProdWidget_Block</class>
+      </prodwidget>
+    </blocks>
+    <models>
+      <prodwidget>
+        <class>Nannica_ProdWidget_Model</class>
+      </prodwidget>
+    </models>
+  </global>
+</config>
